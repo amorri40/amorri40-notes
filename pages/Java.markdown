@@ -1,3 +1,6 @@
+---
+title: Java Notes by AlasdairMorrison.com
+---
 
 #### Reading from a properties file
 Create myProp.properties in the src directory and then use the following code
