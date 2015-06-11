@@ -9,7 +9,7 @@ return \Redirect::route('lists.edit',
 
 ## Flash message and then redirect
 ```
-Flash::message('You have successfully verified your account.');
+\Session::flash('message', 'Successfully updated!');
         return Redirect::route('login_path');
 ```
 
