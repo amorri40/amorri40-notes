@@ -12,3 +12,11 @@ return \Redirect::route('lists.edit',
 Flash::message('You have successfully verified your account.');
         return Redirect::route('login_path');
 ```
+
+## Send Email Message
+```
+Mail::send('email.verify', $confirmation_code, function($message) {
+            $message->to(Input::get('email'), Input::get('username'))
+                ->subject('Verify your email address');
+        });
+```
