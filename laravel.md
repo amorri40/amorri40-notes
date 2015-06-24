@@ -1,4 +1,11 @@
 
+# Models
+
+## Find an instance of a Model
+```
+Role::where('name','=','create-users')->first()
+```
+
 # Controllers
 
 ## Redirect
