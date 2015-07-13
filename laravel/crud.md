@@ -9,8 +9,8 @@
 	 */
 	public function destroy($id)
 	{
-        $list = OBJECT::findOrFail($id);
-        $list->delete();
+        $object = OBJECT::findOrFail($id);
+        $object->delete();
         return \Redirect::route('OBJECT.index')
             ->with('message', 'OBJECT deleted!');
 	}
